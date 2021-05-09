@@ -1,0 +1,72 @@
+ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+		if ( newValue == '') {
+			return;
+		}
+		
+		var whatneeded = g_form.getValue('u_what_needed');
+		
+		// Clear all of the choices from the What needed field choice list
+		g_form.clearOptions('u_what_needed');
+		
+		// If the value of the Request type field is mentorship, add
+		// four mentorship choices and other to the What needed field choice list
+		if(newValue == 'mentorship'){
+			g_form.addOption('u_what_needed','referral','Referral');
+			g_form.addOption('u_what_needed','resume_tip','Resume tips');
+			g_form.addOption('u_what_needed','interview_nug','Interview nuggets');
+			g_form.addOption('u_what_needed','other','Other');
+		}
+		// If the value of the Request type field is tutorial, add
+		// five tutorial choices and other to the What needed field
+		// choice list
+		if(newValue == 'tutorial'){
+			g_form.addOption('u_what_needed','servicenow','ServiceNow');
+			g_form.addOption('u_what_needed','salesforce','Salesforce');
+			g_form.addOption('u_what_needed','aws','AWS');
+			g_form.addOption('u_what_needed','oracle','Oracle');
+			g_form.addOption('u_what_needed','other','Other');
+		}
+		// If the value of the Request type field is volunteering, add
+		// four volunteering choices and other to the What needed field
+		// choice list
+		if(newValue == 'volunteering'){
+			g_form.addOption('u_what_needed','mentor','Mentor');
+			g_form.addOption('u_what_needed','tutor','Tutor');
+			g_form.addOption('u_what_needed','coordinator','Coordinator');
+			g_form.addOption('u_what_needed','other','Other');
+		}
+			// If the value of the Request type field is general, add
+		// four general choices and other to the What needed field
+		// choice list
+		if(newValue == 'general'){
+			g_form.addOption('u_what_needed','inquiry','Inquiry');
+			g_form.addOption('u_what_needed','certification','Certification');
+			g_form.addOption('u_what_needed','membership','Membership');
+			g_form.addOption('u_what_needed','other','Other');
+		}
+		// If the form is loading and it is not a new record, set the u_what_needed value to the
+		// value from the record before it was loaded
+		if(isLoading && !g_form.isNewRecord()){
+			g_form.setValue('u_what_needed', whatneeded);
+		}
+	}
+
+
+
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+   alert("Welcome to the Cohort space.   When you close this alert you will be able to interact with the form.");
+}
+
+function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   alert("Thank you for submitting a Cohort request.");
+}
+
+
+function onCondition() 
+{
+	// Display a message under the Other field to explain what to put in the
+		// Other field.
+g_form.showFieldMsg('u_other','Briefly specify your request.','info');
+}

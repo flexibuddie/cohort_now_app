@@ -1,0 +1,131 @@
+Create a Cohort Study Application
+1. Use Studio to create application
+2. Use Studio to add application files - Tables, Form Layouts, Modules
+3. Create Form views and sections
+4. Use Form Designer to add fields to forms - Date/Time, Choice, Reference
+
+Click create Application File
+TABLE:
+Label: Cohort
+Name:
+Extends table: Task
+Create module: check
+Create mobile module: check
+Add module to menu: --Create New
+New module name: Cohort
+
+Switch to Controls
+Auto-number: check
+Prefix: CO
+Number: 3000
+Number of digits: 7
+Create access controls:
+User role:
+
+MODULES
+a. 'Create New'
+b. 'Open'
+c. 'All'
+
+a.)
+Title: Create New
+Application Menu: Cohort
+Order: 100
+
+Add the table's user role to the module
+Switch to Visibility
+Roles: (Cohort application's user role)
+Switch to Link Type
+i.  Link Type: New Record
+ii. Table: Cohort...
+Submit
+
+b.)
+Title: Open
+Application Menu: Cohort
+Order: 300
+Hint: A list of records in the Cohort table that do not have State value of Closed.
+
+Switch to Visibility
+Roles: (Cohort application's user role).
+Switch to Link Type
+i.  Link Type: List of Records
+ii. Table: Cohort...
+
+Add a Filter Condition
+[State] [is not one of] [Closed Complete, Closed Incomplete, Closed Skipped]
+
+Submit.
+
+Title: Closed
+Application Menu: Cohort
+Order: 400
+Hint: A list of records in the Cohort table that do not have State value of Closed.
+
+Switch to Visibility
+Roles: (Cohort application's user role).
+Switch to Link Type
+i.  Link Type: List of Records
+ii. Table: Cohort...
+
+Add a Filter Condition
+[State] [is not one of] [Open, Work in Progress]
+
+Submit.
+
+FIELDS:
+Number:				Priority:
+Requested for:			State:
+Request type:
+(Tutorial, Mentorship, Volunteering, General
+What needed:(Referral, Resume tips, Interview preparation, Member participation
+Requested on:
+Short description:
+Description:
+Work notes
+Submit
+
+1. Open the Field Types tab in the Field Navigator
+2. Click and drag the data type
+3. Click the Edit Properties button
+4. Configure the Field Properties
+
+SECTION:
+Create a Log Section
+1. Click the Add a new form section
+2. Select the text New section and change it to Log
+3. Select 1 Column from the Layout choice list
+4. Select the Fields tab
+5. Scroll to the Formatters and drag Activities (filtered) formatter into the Log section
+6. Drag Additional comments and Work notes from the Fields tab to the Log section.
+
+Create a Statistics Section
+1. Click the Add a new form section
+2. Select the text New section and change it to Statistics
+3. Select 2 Column from the Layout choice list
+4. Select the Fields tab
+5. Scroll to the Formatters and drag Activities (filtered) formatter into the Log section
+6. Drag Opened, Opended by, Updated, Updated by, Created, Created by, Active, from the Fields tab to the Log section.
+
+UI POLICY
+Create UI Policy
+1. Select Studio
+2. Select the 'Cohort' application
+3. Click 'Create Application File'
+4. Select UI Policy (under Client Development)
+5  Select the Table
+6. Input the Short description
+7. Select 'When to Apply'and add the Conditions
+8. Check the following fields: 'Global', 'On load, 'Reverse if false'.
+9. Submit
+
+Create the UI Policy Execute if True Script
+1. Go through 'Create UI Policy' steps (1-8) or select an existing UI Policy
+2. Select 'Script'
+3. Check 'Run scripts'
+4. Select 'Run scripts in UI type' to All (or as required)
+5. Input your script in Exexcute if true
+6. Submit
+
+
+
