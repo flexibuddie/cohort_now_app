@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>u_other</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-08 13:37:37</sys_created_on>
+        <sys_id>07a41df807403010f38aff808c1ed067</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_other</sys_name>
+        <sys_package display_value="Cohort" source="x_587594_cohort">c278b5bc07732010f38aff808c1ed01c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cohort">c278b5bc07732010f38aff808c1ed01c</sys_scope>
+        <sys_update_name>sys_ui_policy_action_07a41df807403010f38aff808c1ed067</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-08 13:37:37</sys_updated_on>
+        <table>x_587594_cohort_cohort</table>
+        <ui_policy display_value="Cohort show or hide Other field">7d1455f807403010f38aff808c1ed005</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cohort">c278b5bc07732010f38aff808c1ed01c</application>
+        <file_path/>
+        <instance_id>0f5b9e0edb970cd8387021c4059619d7</instance_id>
+        <instance_name>dev102072</instance_name>
+        <name>sys_ui_policy_action_07a41df807403010f38aff808c1ed067</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>u_other</field><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-05-08 13:37:37</sys_created_on><sys_id>07a41df807403010f38aff808c1ed067</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_other</sys_name><sys_package display_value="Cohort" source="x_587594_cohort">c278b5bc07732010f38aff808c1ed01c</sys_package><sys_policy/><sys_scope display_value="Cohort">c278b5bc07732010f38aff808c1ed01c</sys_scope><sys_update_name>sys_ui_policy_action_07a41df807403010f38aff808c1ed067</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-05-08 13:37:37</sys_updated_on><table>x_587594_cohort_cohort</table><ui_policy display_value="Cohort show or hide Other field">7d1455f807403010f38aff808c1ed005</ui_policy><visible>true</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>398698211</payload_hash>
+        <record_name>u_other</record_name>
+        <reverted_from/>
+        <source>d678b5bc07732010f38aff808c1ed01e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-08 13:37:37</sys_created_on>
+        <sys_id>77b491f807403010f38aff808c1ed047</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1794c32a44d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-08 13:37:37</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>bfb491f8c140301052d2220631134346</update_guid>
+        <update_guid_history>bfb491f8c140301052d2220631134346:398698211</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-08 14:05:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>18fbaaa70a3546809bdf31ac5153b810</sys_id>
+        <sys_metadata>07a41df807403010f38aff808c1ed067</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_other</sys_name>
+        <sys_package display_value="Cohort" source="x_587594_cohort">c278b5bc07732010f38aff808c1ed01c</sys_package>
+        <sys_parent display_value="Cohort show or hide Other field">7d1455f807403010f38aff808c1ed005</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Cohort">c278b5bc07732010f38aff808c1ed01c</sys_scope>
+        <sys_scope_delete display_value="">2f4cd93c0f314aa8897ec054d6c69840</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_07a41df807403010f38aff808c1ed067</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_07a41df807403010f38aff808c1ed067">77b491f807403010f38aff808c1ed047</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-08 14:05:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Cohort" max_length="40" name="x_587594_cohort_cohort" sizeclass="5" type="collection">
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="requested_for" reference="x_587594_cohort_cohort" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested on" mandatory="true" max_length="40" name="requested_on" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="general" label="Request type" mandatory="true" max_length="40" name="request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Mentorship" sequence="0" value="mentorship"/>
+                <element inactive_on_update="false" label="Tutorial" sequence="1" value="tutorial"/>
+                <element inactive_on_update="false" label="Volunteering" sequence="2" value="volunteering"/>
+                <element inactive_on_update="false" label="General" sequence="3" value="general"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested on" mandatory="true" max_length="40" name="u_requested_on" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="general" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="General" sequence="0" value="general"/>
+                <element inactive="true" inactive_on_update="true" label="Tutoring" sequence="0" value="tutoring"/>
+                <element inactive_on_update="false" label="Mentorship" sequence="1" value="mentorship"/>
+                <element inactive_on_update="false" label="Tutorial" sequence="2" value="tutorial"/>
+                <element inactive_on_update="false" label="Volunteering" sequence="3" value="volunteering"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="inquiry" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Inquiry" sequence="0" value="inquiry"/>
+                <element inactive_on_update="false" label="Certification" sequence="1" value="certification"/>
+                <element inactive_on_update="false" label="Membership" sequence="2" value="membership"/>
+                <element inactive_on_update="false" label="Mentor" sequence="3" value="mentor"/>
+                <element inactive_on_update="false" label="Tutor" sequence="4" value="tutor"/>
+                <element inactive_on_update="false" label="Coordinator" sequence="5" value="coordinator"/>
+                <element inactive_on_update="false" label="ServiceNow" sequence="6" value="servicenow"/>
+                <element inactive_on_update="false" label="Salesforce" sequence="7" value="salesforce"/>
+                <element inactive_on_update="false" label="AWS" sequence="8" value="aws"/>
+                <element inactive_on_update="false" label="Oracle" sequence="9" value="oracle"/>
+                <element inactive_on_update="false" label="Referral" sequence="10" value="referral"/>
+                <element inactive_on_update="false" label="Resume tips" sequence="11" value="resume_tip"/>
+                <element inactive_on_update="false" label="Interview nuggets" sequence="12" value="interview_nug"/>
+                <element inactive_on_update="false" label="Other" sequence="13" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="inquiry" label="What needed" mandatory="true" max_length="40" name="what_needed" type="string" use_dependent_field="true">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Member participation" sequence="0" value="member_participation"/>
+                <element inactive="true" inactive_on_update="true" label="Others" sequence="0" value="others"/>
+                <element inactive="true" inactive_on_update="true" label="Participation" sequence="0" value="participation"/>
+                <element inactive_on_update="false" label="Referral" sequence="0" value="referral"/>
+                <element inactive="true" inactive_on_update="true" label="Tutorial" sequence="0" value="tutorial"/>
+                <element inactive="true" inactive_on_update="true" label="Certification nuggets" sequence="1" value="certification_nuggets"/>
+                <element inactive_on_update="false" label="Resume tips" sequence="1" value="resume_tips"/>
+                <element inactive="true" inactive_on_update="true" label="General information" sequence="2" value="general_information"/>
+                <element inactive_on_update="false" label="Interview preparation" sequence="2" value="interview_prep"/>
+                <element inactive_on_update="false" label="ServiceNow" sequence="3" value="servicenow"/>
+                <element inactive="true" inactive_on_update="true" label="Resume tip" sequence="4" value="resume tip"/>
+                <element inactive_on_update="false" label="Salesforce" sequence="4" value="salesforce"/>
+                <element inactive_on_update="false" label="AWS" sequence="5" value="aws"/>
+                <element inactive_on_update="false" label="Oracle" sequence="6" value="oracle"/>
+                <element inactive_on_update="false" label="Mentor" sequence="7" value="mentor"/>
+                <element inactive_on_update="false" label="Tutor" sequence="8" value="tutor"/>
+                <element inactive_on_update="false" label="Coordinator" sequence="9" value="coordinator"/>
+                <element inactive_on_update="false" label="Other" sequence="10" value="other"/>
+                <element inactive_on_update="false" label="Inquiry" sequence="11" value="inquiry"/>
+                <element inactive_on_update="false" label="Certification" sequence="12" value="certification"/>
+                <element inactive_on_update="false" label="Membership" sequence="13" value="membership"/>
+            </choice>
+        </element>
+    </element>
+</database>
